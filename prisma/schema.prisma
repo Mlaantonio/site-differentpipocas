@@ -1,0 +1,25 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql" // Altere para "mysql", "sqlite" ou "mongodb" se necessário
+  url      = env("DATABASE_URL")
+}
+
+model Quiz {
+  id        Int    @id @default(autoincrement())
+  pergunta  String @unique
+  respostaA String
+  respostaB String 
+  respostaC String
+  respostaD String
+}
+
+model Mensagens {
+  id        Int      @id @default(autoincrement())
+  nome      String
+  contato   String
+  mensagem  String
+  criadoEm  DateTime @default(now())
+}
