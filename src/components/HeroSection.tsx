@@ -23,8 +23,8 @@ export default function HeroSection() {
           const maxScroll = 950 // Distância de rolagem até zerar o zoom
           const progress = Math.min(scrollY / maxScroll, 1)
 
-          // Reduz gradativamente de 1.25 para 1.0
-          const currentScale = 1.25 - progress * 0.25
+          // Reduz gradativamente de 1.50 para 0.5
+          const currentScale = 1.50 - progress * 0.50
           setScale(currentScale)
           ticking = false
         })
