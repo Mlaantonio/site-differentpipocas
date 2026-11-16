@@ -16,7 +16,7 @@ export default function Header() {
             alt="Logo Different Pipocas"
             width={133}
             height={133}
-            className="h-20 w-auto object-contain"
+            className="h-20 w-auto rounded-full object-contain"
             priority
           />
         </a>
